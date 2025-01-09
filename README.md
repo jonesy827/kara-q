@@ -1,4 +1,4 @@
-# 🎤 Kara-Q
+# Kara-Q
 
 A lightweight, browser-based karaoke queue management system. Kara-Q helps you manage your karaoke party's singing rotation with a clean, simple interface.
 
