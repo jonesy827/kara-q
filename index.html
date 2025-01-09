@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kara-Q</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>kara-Q</h1>
+        
+        <div class="add-singer">
+            <h2>Add to Queue</h2>
+            <input type="text" id="singerName" placeholder="Singer's Name" required>
+            <input type="text" id="songTitle" placeholder="Song Title (optional)">
+            <button onclick="addToQueue()">Add to Queue</button>
+        </div>
+
+        <div class="queue-section">
+            <h2>Current Queue</h2>
+            <div class="queue-controls">
+                <div class="requeue-option">
+                    <input type="checkbox" id="requeue" checked>
+                    <label for="requeue">Requeue singer after performance</label>
+                </div>
+                <button onclick="nextSinger()">Next Singer</button>
+            </div>
+            <div class="current-singer">
+                <h3>Now Singing:</h3>
+                <div id="currentSinger">No one is currently singing</div>
+            </div>
+            <div class="queue-list">
+                <h3>Up Next:</h3>
+                <ul id="queue"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
