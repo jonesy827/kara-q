@@ -1,0 +1,71 @@
+/* TV Display specific styles */
+.tv-mode {
+    background-color: #000;
+    color: #fff;
+    padding: 2rem;
+    font-size: 24px;
+    min-height: 100vh;
+}
+
+.tv-mode h1 {
+    color: #3498db;
+    font-size: 3rem;
+}
+
+.tv-mode .current-singer {
+    background: #2c3e50;
+    padding: 2rem;
+    text-align: center;
+}
+
+.tv-mode .current-singer h2 {
+    color: #3498db;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.tv-mode #currentSinger {
+    font-size: 2.5rem;
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.tv-mode .queue-list {
+    background: #2c3e50;
+}
+
+.tv-mode .queue-list h2 {
+    color: #3498db;
+    font-size: 2rem;
+}
+
+.tv-mode #queue li {
+    padding: 1rem;
+    border-bottom: 1px solid #34495e;
+    font-size: 1.8rem;
+}
+
+/* View toggle styles */
+.view-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1000;
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+}
+
+.view-toggle:hover {
+    background-color: #2980b9;
+}
+
+/* Hide the non-active view */
+.hidden {
+    display: none !important;
+} 

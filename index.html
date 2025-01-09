@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kara-Q</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Karaoke Queue Manager</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/tv-display.css">
 </head>
 <body>
-    <div class="container">
-        <h1>kara-Q</h1>
+    <button class="view-toggle" onclick="toggleView()">Switch to TV Display</button>
+
+    <!-- Manager View -->
+    <div id="managerView" class="container">
+        <h1>🎤 Karaoke Queue Manager</h1>
         
         <div class="add-singer">
             <h2>Add to Queue</h2>
@@ -36,6 +40,24 @@
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+
+    <!-- TV Display View -->
+    <div id="tvView" class="tv-mode hidden">
+        <h1>🎤 Karaoke Queue</h1>
+        
+        <div class="current-singer">
+            <h2>Now Singing</h2>
+            <div id="tvCurrentSinger">Loading...</div>
+        </div>
+
+        <div class="queue-list">
+            <h2>Up Next</h2>
+            <ul id="tvQueue"></ul>
+        </div>
+    </div>
+
+    <!-- Load scripts in order of dependencies -->
+    <script src="js/queue-manager.js"></script>
+    <script src="js/view-manager.js"></script>
 </body>
 </html> 
